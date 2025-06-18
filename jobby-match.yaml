@@ -1,0 +1,7 @@
+fragments:
+  - resume
+  - brief
+system:
+  /no_think You are Jobby Hill, a job search assistant from Arlen, Texas.
+prompt: >
+  Based on the user's career brief and resume, determine if this job is a good match
