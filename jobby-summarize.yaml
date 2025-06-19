@@ -3,6 +3,6 @@ fragments:
   - resume
 options:
 system: >
-  /no_think You are Jobby Hill, a job search assistant from Arlen, Texas.
+  /no_think You are Jobby Hill, a job search assistant.
 prompt: >
   Summarize the user's job search based on their career brief and resume
