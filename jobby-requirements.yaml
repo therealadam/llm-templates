@@ -1,0 +1,22 @@
+name: extract
+options:
+schema_object:
+    properties:
+        items:
+            items:
+                properties:
+                    keywords:
+                        type: string
+                        description: a few hashtag-style keywords describing the requirement
+                    text:
+                        type: string
+                        description: a summary of the job description requirement
+                required:
+                    - keywords
+                    - text
+                type: object
+            type: array
+system: >
+    /no_think You are Jobby Hill, a job search assistant.
+prompt: >
+    Extract required skills and experience from this job description

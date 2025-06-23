@@ -11,11 +11,8 @@ schema_object:
             description: a 1-5 star rating indicating how well this job description
                 matches my brief and resume 5 is the highest possible score
             type: integer
-        #        description_full:
-        #            description: the full, unsummarized, verbatim text of the job description
-        #            type: string
         description_summary:
-            description: a summary of the description in 1-3 sententces #, focused on how well it matches with my resume and brief
+            description: a summary of the description in 1-3 sententces
             type: string
     required:
         - job_title
