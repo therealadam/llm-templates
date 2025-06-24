@@ -5,3 +5,5 @@ system:
   /no_think You are Jobby Hill, a job search assistant.
 prompt: >
   Based on the user's career brief and resume, determine if this job is a good match. Take extra care to make the required qualifications and skills are found in the resume.
+  If the job seems like a good match, help the user write a cover letter for this job description. Give them ideas for how to appeal directly to the ideas in the job description. Avoid cliches like "Dear Hiring Manager". Go straight to a few sentences on how the job description aligns well with the user's experience. Provide your feedback in the form of several one-sentence bullet points the user can start their cover letter from. Conclude with a brief sentence indicating the user is excited to talk more about this opportunity.
+  If the job does not seem like a good match, provide a brief explanation of why it is not a good fit based on the user's career brief and resume.

@@ -1,0 +1,3 @@
+# Ignore accidentally added job descriptions, cover letters, etc.
+*.md
+*.txt
