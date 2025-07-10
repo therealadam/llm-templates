@@ -1,0 +1,32 @@
+[tasks.match]
+description = "Fetch and evaluate a job description"
+run = """
+llm --fragment 'reader:{{arg(name="job_url")}}' \
+  --model qwen3:latest \
+  --template ./jobby-match.yaml
+"""
+
+[tasks.extract]
+description = "Extract key information from a job description"
+run = """
+llm --fragment 'reader:{{arg(name="job_url")}}' \
+  --model qwen3:latest \
+  --template ./jobby-extract.yaml
+"""
+
+[tasks.go]
+description = "Jump start this job application"
+run = """
+llm --fragment 'reader:{{arg(name="job_url")}}' \
+  --model qwen3:latest \
+  --template ./jobby-go.yaml
+"""
+
+[tasks.answer]
+description = "Based on the job description, help the user start answers for thejob application questions"
+run = """
+llm --fragment 'reader:{{arg(name="job_url")}}' \
+  --model qwen3:latest \
+  --template ./jobby-answer.yaml \
+  {{arg(name="questions")}}
+"""

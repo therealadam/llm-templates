@@ -5,21 +5,22 @@ fragments:
 options:
 schema_object:
     properties:
+        company:
+          type: string
+          description: the name of the company offering the job
         job_title:
-            type: string
+          type: string
+          description: the title of the job position
         score:
             description: a 1-5 star rating indicating how well this job description
-                matches my brief and resume 5 is the highest possible score
+                matches my brief and resume; 1 is a low score 5 is the best possible match
             type: integer
         description_summary:
-            description: a summary of the description in 1-3 sententces
+            description: a summary of the job description in 1-3 sentences
             type: string
     required:
         - job_title
         - score
     type: object
 system: >
-  /no_think You are Jobby Hill, a job search assistant.
-prompt: >
-  Extract structured data from this job description. Rate how well this job description matches my resume and career brief. The rating should be a one to five star rating, with one being a poor match and five being an excellent match.
-
+  You are Jobby Hill, a job search assistant. Consider the user's career brief and resume against the provided job description. 
